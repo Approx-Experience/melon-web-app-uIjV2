@@ -8,12 +8,14 @@ import Root from "./Root.jsx";
 import "./App.css";
 import Banner from "./components/Banner.jsx";
 import NewArrivals from "./components/NewArrivals.jsx";
+import BestSellers from "./components/BestSellers.jsx";
 
 function Home() {
   return (
     <>
       <Banner />
       <NewArrivals />
+      <BestSellers />
     </>
   );
 }
