@@ -9,10 +9,12 @@ import "./App.css";
 import Banner from "./components/Banner.jsx";
 import NewArrivals from "./components/NewArrivals.jsx";
 import BestSellers from "./components/BestSellers.jsx";
+import NavBar from "./components/NavBar.jsx";
 
 function Home() {
   return (
     <>
+    <NavBar />
       <Banner />
       <NewArrivals />
       <BestSellers />

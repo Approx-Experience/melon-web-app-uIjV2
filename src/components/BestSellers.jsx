@@ -6,7 +6,7 @@ export default function BestSellers() {
         <div className="py-10">
         <div className="new-arrivals d-flex flex-column align-items-center p-4">
         <h2 className="fs-3 fw-bold mb-4">best sellers</h2>
-        <h3 className="fs-6">The hottest trends in fashion today</h3>
+        <h3 className="font-14">The hottest trends in fashion today</h3>
         </div>
 
      <div className="row px-5">
