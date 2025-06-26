@@ -1,5 +1,6 @@
 import { Sequelize } from "sequelize";
 
+
 async function connectToDB(dbURI) {
   console.log(`Connecting to DB: ${dbURI}`);
 
