@@ -20,7 +20,7 @@ export default function NavBar() {
         <div className="position-relative">
         <img src="./search.svg"
         className="position-absolute start-0 top-50 translate-middle-y"
-        alt="Search" style={{ width: "20px", height: "20px" }} />
+        alt="Search icon" style={{ width: "20px", height: "20px" }} />
 
         <input className="px-5 py-1 rounded-1 border-1"
         type="text"
@@ -38,9 +38,9 @@ export default function NavBar() {
 
 
         <div className="d-flex flex-row gap-3 fw-bold font-14">
-            <div> <img src="./account.svg"></img> account </div>
-            <div> <img src="./favorite.svg"></img> favorites</div>
-            <div className="fw-normal"> <img src="./cart.svg"></img> 0</div>
+            <div> <img src="./account.svg" alt="Account icon"></img> account </div>
+            <div> <img src="./favorite.svg" alt="Favorites icon"></img> favorites</div>
+            <div className="fw-normal"> <img src="./cart.svg" alt="Cart icon"></img> 0</div>
         </div>
 </div>
 
