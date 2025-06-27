@@ -1,62 +1,62 @@
 [
-    {
-        "title": "Vintage Denim Jacket",
-        "description": "Classic blue denim jacket, perfect for a casual day out or a stylish layering piece.",
-        "image": "https://minnythrift.com/cdn/shop/files/2AAD827F-4C20-4D17-B18A-4044D619656B.jpg?v=1698363457",
-        "price": 49.99
-    },
-    {
-        "title": "Black Leather Boots",
-        "description": "Durable and sleek black leather boots that pair well with both jeans and dresses.",
-        "image": "https://cdn.vagabond.com/thumbnails/924/auto/resize/productimages/pos1/list/5417-001-20.jpg",
-        "price": 89.99
-    },
-    {
-        "title": "White Linen Shirt",
-        "description": "Breathable white linen shirt, ideal for summer days or a smart-casual look.",
-        "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fa1%2F8f%2Fa18f27cb74d100a07fd7cd9e75391fd330ee3d6f.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]",
-        "price": 35.99
-    },
-    {
-        "title": "Pleated Midi Skirt",
-        "description": "Elegant pleated midi skirt in a neutral shade, versatile for office wear or an evening out.",
-        "image": "https://thefrankieshop.com/cdn/shop/files/GISELE-PLEATED-MIDI-SKIRT-GREY-6220-PACKSHOT.jpg?v=1698660371&width=2880",
-        "price": 42.99
-    },
-    {
-        "title": "Graphic Tee",
-        "description": "Fun and trendy graphic tee featuring a bold print, perfect for a relaxed and stylish look.",
-        "image": "https://target.scene7.com/is/image/Target/GUEST_54e478a2-367f-4d33-b989-80c2d65fc9e4?wid=488&hei=488&fmt=pjpeg",
-        "price": 24.99
-    },
-    {
-        "title": "Silk Scarf",
-        "description": "Luxurious silk scarf with a colorful abstract print to add a pop of color to any outfit.",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQfSHevonAn9yceofoWngNzCCEXvONS3Ni9ct-JXGvNg&s",
-        "price": 29.99
-    },
-    {
-        "title": "Wool Fedora Hat",
-        "description": "Stylish wool fedora hat, an excellent accessory to elevate any winter ensemble.",
-        "image": "https://assets.orvis.com/is/image/orvisprd/3G5R26MF23_W?wid=1024&src=is($object$:1-1)",
-        "price": 34.99
-    },
-    {
-        "title": "Floral Print Dress",
-        "description": "Beautiful floral print dress with a flattering silhouette, perfect for spring and summer.",
-        "image": "https://www.lilyboutique.com/media/catalog/product/cache/1/image/560x840/9df78eab33525d08d6e5fb8d27136e95/9/5/95_92_.jpg",
-        "price": 58.99
-    },
-    {
-        "title": "Cashmere Sweater",
-        "description": "Soft and cozy cashmere sweater in a pastel color, a must-have for chilly days.",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDmkypxTzQH0QDF-cVyyV4mayd0V0Om1llkNliDq2i6A&s",
-        "price": 79.99
-    },
-    {
-        "title": "High Waisted Jeans",
-        "description": "Comfortable and fashionable high waisted jeans, a versatile staple in any wardrobe.",
-        "image": "https://static.zara.net/assets/public/543b/67f1/ba0c455ca8b3/40d742b51518/06164053405-e1/06164053405-e1.jpg?ts=1704190612309&w=750",
-        "price": 54.99
-    }
+  {
+    "title": "Vintage Denim Jacket",
+    "description": "Classic blue denim jacket, perfect for a casual day out or a stylish layering piece.",
+    "image": "https://minnythrift.com/cdn/shop/files/2AAD827F-4C20-4D17-B18A-4044D619656B.jpg?v=1698363457",
+    "price": 49.99
+  },
+  {
+    "title": "Black Leather Boots",
+    "description": "Durable and sleek black leather boots that pair well with both jeans and dresses.",
+    "image": "https://cdn.vagabond.com/thumbnails/924/auto/resize/productimages/pos1/list/5417-001-20.jpg",
+    "price": 89.99
+  },
+  {
+    "title": "White Linen Shirt",
+    "description": "Breathable white linen shirt, ideal for summer days or a smart-casual look.",
+    "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fa1%2F8f%2Fa18f27cb74d100a07fd7cd9e75391fd330ee3d6f.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]",
+    "price": 35.99
+  },
+  {
+    "title": "Pleated Midi Skirt",
+    "description": "Elegant pleated midi skirt in a neutral shade, versatile for office wear or an evening out.",
+    "image": "https://thefrankieshop.com/cdn/shop/files/GISELE-PLEATED-MIDI-SKIRT-GREY-6220-PACKSHOT.jpg?v=1698660371&width=2880",
+    "price": 42.99
+  },
+  {
+    "title": "Graphic Tee",
+    "description": "Fun and trendy graphic tee featuring a bold print, perfect for a relaxed and stylish look.",
+    "image": "https://target.scene7.com/is/image/Target/GUEST_54e478a2-367f-4d33-b989-80c2d65fc9e4?wid=488&hei=488&fmt=pjpeg",
+    "price": 24.99
+  },
+  {
+    "title": "Silk Scarf",
+    "description": "Luxurious silk scarf with a colorful abstract print to add a pop of color to any outfit.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQfSHevonAn9yceofoWngNzCCEXvONS3Ni9ct-JXGvNg&s",
+    "price": 29.99
+  },
+  {
+    "title": "Wool Fedora Hat",
+    "description": "Stylish wool fedora hat, an excellent accessory to elevate any winter ensemble.",
+    "image": "https://assets.orvis.com/is/image/orvisprd/3G5R26MF23_W?wid=1024&src=is($object$:1-1)",
+    "price": 34.99
+  },
+  {
+    "title": "Floral Print Dress",
+    "description": "Beautiful floral print dress with a flattering silhouette, perfect for spring and summer.",
+    "image": "https://www.lilyboutique.com/media/catalog/product/cache/1/image/560x840/9df78eab33525d08d6e5fb8d27136e95/9/5/95_92_.jpg",
+    "price": 58.99
+  },
+  {
+    "title": "Cashmere Sweater",
+    "description": "Soft and cozy cashmere sweater in a pastel color, a must-have for chilly days.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDmkypxTzQH0QDF-cVyyV4mayd0V0Om1llkNliDq2i6A&s",
+    "price": 79.99
+  },
+  {
+    "title": "High Waisted Jeans",
+    "description": "Comfortable and fashionable high waisted jeans, a versatile staple in any wardrobe.",
+    "image": "https://static.zara.net/assets/public/543b/67f1/ba0c455ca8b3/40d742b51518/06164053405-e1/06164053405-e1.jpg?ts=1704190612309&w=750",
+    "price": 54.99
+  }
 ]

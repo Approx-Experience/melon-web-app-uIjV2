@@ -10,7 +10,7 @@
     "preview": "vite preview",
     "seed": "node scripts/seed.js",
     "initdb": "dropdb --if-exists melon_db && createdb melon_db",
-        "test": "vitest",
+    "test": "vitest",
     "test:run": "vitest run"
   },
   "dependencies": {
@@ -47,6 +47,7 @@
     "jsdom": "^26.1.0",
     "nodemon": "^3.1.10",
     "postcss": "^8.5.6",
+    "prettier": "^3.6.2",
     "tailwindcss": "^4.1.10",
     "vite": "^5.4.9",
     "vitest": "^3.2.4"

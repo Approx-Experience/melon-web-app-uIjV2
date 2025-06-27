@@ -1,7 +1,5 @@
-
-
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Montserrat, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -13,6 +11,13 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  body {
+    background-color: #faf9f8;
+  }
+  .font-14 {
+    font-size: 14px;
+  }
 }
 
 a:hover {
@@ -28,4 +33,3 @@ a:hover {
     color: #747bff;
   }
 }
-

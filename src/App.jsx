@@ -9,10 +9,12 @@ import "./App.css";
 import Banner from "./components/Banner.jsx";
 import NewArrivals from "./components/NewArrivals.jsx";
 import BestSellers from "./components/BestSellers.jsx";
+import NavBar from "./components/NavBar.jsx";
 
 function Home() {
   return (
     <>
+      <NavBar />
       <Banner />
       <NewArrivals />
       <BestSellers />
@@ -23,15 +25,13 @@ function Home() {
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Root />}>
-            <Route index element={<Home />} />
-
-    </Route>
-  )
+      <Route index element={<Home />} />
+    </Route>,
+  ),
 );
 
 function App() {
   return <RouterProvider router={router} />;
-
 }
 
 export default App;

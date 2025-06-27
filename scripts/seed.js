@@ -13,10 +13,10 @@ const usersInDB = await Promise.all(
     const { email, password } = user;
     const newUser = User.create({
       email: email,
-      password: password
+      password: password,
     });
     return newUser;
-  })
+  }),
 );
 
 console.log("Creating products...");
@@ -27,10 +27,10 @@ const productsInDB = await Promise.all(
       title: title,
       description: description,
       image: image,
-      price: price
+      price: price,
     });
     return newProduct;
-  })
+  }),
 );
 
 await db.close();
