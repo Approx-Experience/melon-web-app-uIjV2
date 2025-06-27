@@ -1,9 +1,9 @@
 import { render, screen } from "@testing-library/react";
-import Banner from "./Banner";
+import DesktopBanner from "./DesktopBanner";
 
-describe("Banner Component", () => {
+describe("Desktop Banner Component", () => {
   it('renders the "SUMMER 2025" heading', () => {
-    render(<Banner />);
+    render(<DesktopBanner />);
     // Using getByRole with 'heading' and a regex for text content (case-insensitive)
 
     const heading = screen.getByRole("heading", { name: /summer 2025/i });
@@ -11,7 +11,7 @@ describe("Banner Component", () => {
   });
 
   it('renders the "New Collection" heading', () => {
-    render(<Banner />);
+    render(<DesktopBanner />);
     const newCollectionHeading = screen.getByRole("heading", {
       name: /new collection/i,
     });
@@ -19,19 +19,19 @@ describe("Banner Component", () => {
   });
 
   it('renders the "shorts, tees, tanks & more!" paragraph', () => {
-    render(<Banner />);
+    render(<DesktopBanner />);
     const paragraph = screen.getByText(/shorts, tees, tanks & more!/i);
     expect(paragraph).toBeInTheDocument();
   });
 
   it('renders the "SHOP NOW" button', () => {
-    render(<Banner />);
+    render(<DesktopBanner />);
     const button = screen.getByRole("button", { name: /shop now/i });
     expect(button).toBeInTheDocument();
   });
 
   it("renders the banner image with the correct alt text", () => {
-    render(<Banner />);
+    render(<DesktopBanner />);
     const image = screen.getByRole("img", { name: /banner/i });
     expect(image).toBeInTheDocument();
     expect(image).toHaveClass("img-fluid");

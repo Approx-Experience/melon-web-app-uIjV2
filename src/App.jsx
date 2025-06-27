@@ -6,16 +6,34 @@ import {
 } from "react-router-dom";
 import Root from "./Root.jsx";
 import "./App.css";
-import Banner from "./components/Banner.jsx";
-import NewArrivals from "./components/NewArrivals.jsx";
-import BestSellers from "./components/BestSellers.jsx";
-import NavBar from "./components/NavBar.jsx";
+import DesktopBanner from "./components/Banner/DesktopBanner.jsx";
+import MobileBanner from "./components/Banner/MobileBanner.jsx";
+import NewArrivals from "./components/NewArrivals/NewArrivals.jsx";
+import BestSellers from "./components/BestSellers/BestSellers.jsx";
+import NavBar from "./components/NavBar/NavBar.jsx";
+import { useState, useEffect } from "react";
+
+export function useWindowWidth() {
+  const [width, setWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    function handleResize() {
+    setWidth(window.innerWidth);
+  }  
+  window.addEventListener("resize", handleResize);
+  return () => window.removeEventListener("resize", handleResize);
+  }, []);
+  return width;
+}
+
 
 function Home() {
+  const width = useWindowWidth();
+
   return (
     <>
       <NavBar />
-      <Banner />
+     {width >= 1050 ? <DesktopBanner /> : <MobileBanner />} 
       <NewArrivals />
       <BestSellers />
     </>

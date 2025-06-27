@@ -1,5 +1,5 @@
 import React from "react";
-import ProductInfo from "./ProductInfo";
+import ProductInfo from "../ProductInfo/ProductInfo";
 
 export default function BestSellers() {
   return (
