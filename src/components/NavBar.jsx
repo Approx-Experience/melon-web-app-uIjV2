@@ -23,9 +23,12 @@ export default function NavBar() {
     <div className="d-flex flex-row justify-content-between align-items-center mb-3 w-100">
     
     <div className="d-flex flex-row  gap-2">    
-        <h1 className="fw-bold fs-4 mx-4"
+    
+        <h1 className="fw-bold fs-4 mx-2"
         style={{color: "#E13636"}}>melon</h1>
+     <a href="/">   
         <img src="./melon-icon.svg" alt="Melon Logo" className="logo" />
+        </a>
         </div>
 
 
