@@ -1,41 +1,41 @@
-import {render, screen} from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import Banner from "./Banner";
 
-describe('Banner Component', () => {
-    it ('renders the "SUMMER 2025" heading', () => {
-        render(<Banner />);
-            // Using getByRole with 'heading' and a regex for text content (case-insensitive)
+describe("Banner Component", () => {
+  it('renders the "SUMMER 2025" heading', () => {
+    render(<Banner />);
+    // Using getByRole with 'heading' and a regex for text content (case-insensitive)
 
-        const heading = screen.getByRole('heading', { name: /summer 2025/i });
-        expect(heading).toBeInTheDocument();
-    })
+    const heading = screen.getByRole("heading", { name: /summer 2025/i });
+    expect(heading).toBeInTheDocument();
+  });
 
-    it ('renders the "New Collection" heading', () => {
-        render (<Banner />);
-        const newCollectionHeading = screen.getByRole('heading', { name: /new collection/i });
-        expect(newCollectionHeading).toBeInTheDocument();
-    })
-
-    it ('renders the "shorts, tees, tanks & more!" paragraph', () => {
-        render(<Banner />);
-        const paragraph = screen.getByText(/shorts, tees, tanks & more!/i);
-        expect(paragraph).toBeInTheDocument();
+  it('renders the "New Collection" heading', () => {
+    render(<Banner />);
+    const newCollectionHeading = screen.getByRole("heading", {
+      name: /new collection/i,
     });
+    expect(newCollectionHeading).toBeInTheDocument();
+  });
 
-    it ('renders the "SHOP NOW" button', () => {
-        render(<Banner />);
-        const button = screen.getByRole('button', { name: /shop now/i });
-        expect(button).toBeInTheDocument();
-    });
+  it('renders the "shorts, tees, tanks & more!" paragraph', () => {
+    render(<Banner />);
+    const paragraph = screen.getByText(/shorts, tees, tanks & more!/i);
+    expect(paragraph).toBeInTheDocument();
+  });
 
-    it ('renders the banner image with the correct alt text', () => {
-        render(<Banner />);
-    const image = screen.getByRole('img', { name: /banner/i });
-        expect(image).toBeInTheDocument();
-        expect(image).toHaveClass('img-fluid');
-        expect(image).toHaveClass('w-25');
-        expect(image).toHaveAttribute('src', './banner-1.png'); 
+  it('renders the "SHOP NOW" button', () => {
+    render(<Banner />);
+    const button = screen.getByRole("button", { name: /shop now/i });
+    expect(button).toBeInTheDocument();
+  });
 
-    });
-
+  it("renders the banner image with the correct alt text", () => {
+    render(<Banner />);
+    const image = screen.getByRole("img", { name: /banner/i });
+    expect(image).toBeInTheDocument();
+    expect(image).toHaveClass("img-fluid");
+    expect(image).toHaveClass("w-25");
+    expect(image).toHaveAttribute("src", "./banner-1.png");
+  });
 });

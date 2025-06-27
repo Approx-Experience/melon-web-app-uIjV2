@@ -4,11 +4,16 @@
   margin: 0 auto;
   text-align: center;
   color: #000;
-  background-color: #FAF9F8;
+  background-color: #faf9f8;
   min-height: 100vh;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Montserrat", sans-serif;
   color: #000;
 }

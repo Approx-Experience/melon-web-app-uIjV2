@@ -5,11 +5,8 @@ const Root = () => {
   return (
     <div>
       <Outlet />
-    
-      </div>
+    </div>
   );
 };
 
 export default Root;
-
-
