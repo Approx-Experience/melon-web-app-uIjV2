@@ -1,0 +1,23 @@
+.bannerimage {
+  background-image: url("./banner-1.png");
+  background-size: "cover";
+  background-position: "center";
+  background-repeat: "no-repeat";
+  height: "100vh";
+  alt: "Banner Image";
+}
+
+.bannerMobileTitle {
+  font-size: 82px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 0.5rem;
+}
+
+.summerMobile {
+  margin-top: 50px;
+}
+
+.textMobile {
+  font-weight: bold;
+}
