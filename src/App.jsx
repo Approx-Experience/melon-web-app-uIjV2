@@ -10,7 +10,10 @@ import DesktopBanner from "./components/Banner/DesktopBanner.jsx";
 import MobileBanner from "./components/Banner/MobileBanner.jsx";
 import NewArrivals from "./components/NewArrivals/NewArrivals.jsx";
 import BestSellers from "./components/BestSellers/BestSellers.jsx";
-import NavBar from "./components/NavBar/NavBar.jsx";
+import NavBar from "./components/NavBar/NavigationBar.jsx";
+import MobileNavigationBar from "./components/NavBar/MobileNavigationBar.jsx";
+
+
 import { useState, useEffect } from "react";
 
 export function useWindowWidth() {
@@ -32,8 +35,8 @@ function Home() {
 
   return (
     <>
-      <NavBar />
-     {width >= 1050 ? <DesktopBanner /> : <MobileBanner />} 
+    {width <= 768 ? <MobileNavigationBar/> : <NavBar />}
+    {width >= 1050 ? <DesktopBanner /> : <MobileBanner />} 
       <NewArrivals />
       <BestSellers />
     </>

@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import NavBar from "./NavBar";
+import NavBar from "./NavigationBar";
 import { expect, it } from "vitest";
 
 describe("NavBar Component", () => {
