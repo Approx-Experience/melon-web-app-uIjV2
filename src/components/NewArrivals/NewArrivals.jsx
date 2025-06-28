@@ -1,4 +1,5 @@
 import React from "react";
+import "./NewArrivals.css";
 
 export default function NewArrivals() {
   return (
@@ -10,14 +11,12 @@ export default function NewArrivals() {
           <img
             src="./shirts.png"
             alt="New Arrival 1"
-            className="img-fluid m-2"
-            style={{ height: "416px", width: "auto" }}
+            className="img-fluid m-2 main-image"
           />
           <img
             src="./shorts.png"
             alt="New Arrival 2"
-            className="img-fluid m-2"
-            style={{ height: "416px", width: "auto" }}
+            className="img-fluid m-2 main-image"
           />
         </div>
 
@@ -25,14 +24,12 @@ export default function NewArrivals() {
           <img
             src="./hats.png"
             alt="New Arrival 3"
-            className="img-fluid m-2 "
-            style={{ height: "200px", width: "auto" }}
+            className="img-fluid m-2 secondary-image"
           />
           <img
             src="./athleisure.png"
             alt="New Arrival 4"
-            className="img-fluid m-2"
-            style={{ height: "200px", width: "auto" }}
+            className="img-fluid m-2 secondary-image"
           />
         </div>
       </div>
