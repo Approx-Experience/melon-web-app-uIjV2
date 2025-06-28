@@ -47,3 +47,9 @@
   z-index: 2; /* Ensure content is above the overlay */
 
 }
+
+@media (max-width: 600px) {
+  .bannerMobileTitle {
+    font-size: 60px;
+  }
+}
