@@ -21,3 +21,59 @@ flex-direction: row;
 .search-open {
   min-width: 235px;
 }
+
+.menu-list {
+  list-style: none;         /* Removes bullets */
+  padding-left: 0;          /* Removes default left padding */
+  margin: 0;                /* Optional: removes default margin */
+  background-color: white;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw; /* or 100%, or a fixed width as needed */
+  max-width: 400px; /* optional, for better look on large screens */
+  margin: 1.5rem 0;
+  font-size: 2rem;
+  text-align: left;
+
+}
+
+.menu-item a {
+  color: inherit;           /* Inherits text color from parent */
+  text-decoration: none;    /* Removes underline */
+  font-weight: normal;
+}
+
+.menu-item a:visited {
+  color: inherit;           /* Ensures visited links don't turn purple */
+}
+
+.menu-dropdown-fullscreen {
+  position: fixed;
+  top: 75px; /* or top: your navbar height if you want it below */
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: white; /* or any color you want */
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.menu-item {
+  margin: 1.5rem 0;
+  font-size: 2rem;
+  text-align: center;
+}
+.menu-item a {
+  color: inherit;
+  text-decoration: none;
+}
