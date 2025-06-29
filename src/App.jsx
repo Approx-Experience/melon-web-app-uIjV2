@@ -11,7 +11,7 @@ import MobileBanner from "./components/Banner/MobileBanner.jsx";
 import NewArrivals from "./components/NewArrivals/NewArrivals.jsx";
 import NewArrivalsMobile from "./components/NewArrivals/NewArrivalsMobile.jsx";
 import BestSellers from "./components/BestSellers/BestSellers.jsx";
-import NavBar from "./components/NavBar/NavigationBar.jsx";
+import NavigationBar from "./components/NavBar/NavigationBar.jsx";
 import MobileNavigationBar from "./components/NavBar/MobileNavigationBar.jsx";
 
 
@@ -36,7 +36,7 @@ function Home() {
 
   return (
     <>
-    {width <= 768 ? <MobileNavigationBar/> : <NavBar />}
+    {width <= 768 ? <MobileNavigationBar/> : <NavigationBar />}
     {width >= 1050 ? <DesktopBanner /> : <MobileBanner />} 
      {width >= 1050 ? <NewArrivals /> : <NewArrivalsMobile />} 
       <BestSellers />
