@@ -1,7 +1,18 @@
 import "./MobileNavigationBar.css";
+import { useState } from "react";
+
 
 export default function NavBar() {
+const [search, setSearch] = useState(false);
+
+
+  function clickHandler() {
+      console.log("Clicked");
+      setSearch(!search);
+  }
+
   return (
+
     <div>
       <nav className="navbar d-flex flex-column pt-3 px-4 background-color">
         <div className="d-flex flex-row justify-content-between align-items-center w-100">
@@ -18,8 +29,21 @@ export default function NavBar() {
                 src="./search.svg"
                 className="search-icon"
                 alt="Search icon"
+                onClick={clickHandler}
               />
-
+              {search && (
+                <div>
+                <input
+                  type="text"
+                  placeholder="Search"
+                  className="search-input background-color"
+                  
+                />
+                <img src="./close.svg" alt="Close icon" className="close-icon" onClick={clickHandler} />
+               </div>
+              )}
+              
+              <div className="icons">
               <div>
                 {" "}
                 <img src="./account.svg" alt="Account icon"></img>{" "}
@@ -35,6 +59,7 @@ export default function NavBar() {
               <div>
                 <img src="./menu.svg" alt="Menu icon"></img>
               </div>
+              </div>  
             </div>
           </div>
         </div>
