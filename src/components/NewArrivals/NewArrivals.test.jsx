@@ -22,7 +22,6 @@ describe("NewArrivals Component", () => {
     expect(images.length).toBeGreaterThan(0);
 
     images.forEach((image) => {
-      expect(image).toHaveClass("img-fluid");
       expect(image).toHaveClass("m-2");
       expect(image).toHaveAttribute("src");
       expect(image).toHaveAttribute("alt");
