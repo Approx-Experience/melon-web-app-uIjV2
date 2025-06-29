@@ -20,18 +20,18 @@ export default function NewArrivals() {
             className="img-fluid m-2"
           />
        
-
+      <img
+            src="./athleisure.png"
+            alt="New Arrival 4"
+            className="img-fluid m-2"
+          />
         <div className="d-flex flex-column">
           <img
             src="./hats.png"
             alt="New Arrival 3"
             className="img-fluid m-2"
           />
-          <img
-            src="./athleisure.png"
-            alt="New Arrival 4"
-            className="img-fluid m-2"
-          />
+    
         </div>
         </div>
       </div>
