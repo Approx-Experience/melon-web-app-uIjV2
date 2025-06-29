@@ -1,6 +1,6 @@
 import "./NavigationBar.css";
 
-export default function NavBar() {
+export default function NavigationBar() {
   return (
     <div>
       <nav
