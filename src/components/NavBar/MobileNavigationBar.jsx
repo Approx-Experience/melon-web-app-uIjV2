@@ -29,9 +29,10 @@ export default function NavBar() {
   }
 
   return (
-    <div>
+    <div  className="mobile-navbar w-100">
       <nav className="navbar d-flex flex-column pt-3 px-4 background-color">
         <div className="d-flex flex-row justify-content-between align-items-center w-100">
+
           <div className="d-flex flex-column">
             <h1 className="fw-bold fs-6 text-color">melon</h1>
             <a href="/">
@@ -48,11 +49,11 @@ export default function NavBar() {
                 onClick={clickHandler}
               />
               {search && (
-                <div className="d-flex align-items-center search-open">
+  <div className="flex-grow-1 d-flex align-items-center ms-3">
                   <input
                     type="text"
                     placeholder="Search"
-                    className="search-input background-color w-100 border-0"
+                    className="search-input background-color border-0"
                   />
                   <img
                     src="./close.svg"
@@ -96,9 +97,22 @@ export default function NavBar() {
                 </div>
               )}
             </div>
+
+
+
+
+
+
+
+
+
+
           </div>
         </div>
       </nav>
+
+
+
       {isOpen && (
         <div className="menu-dropdown-fullscreen">
           <ul className="menu-list d-flex flex-column justify-content-center align-items-center justify-content-between">

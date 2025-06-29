@@ -8,8 +8,13 @@
 .search-icon {
   width: 20px;
   height: 20px;
+  margin-left: -10;
 }
-
+.search-input {
+  width: 175px;
+  padding-left: -50px;
+  margin-left: -30px;
+}
 .icons {
   display: flex;
   align-items: center;
@@ -19,7 +24,9 @@ flex-direction: row;
 }
 
 .search-open {
-  min-width: 235px;
+  display: flex;
+  align-items: center;
+  width: 100vw;
 }
 
 .menu-list {
