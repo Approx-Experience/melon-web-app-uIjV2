@@ -17,3 +17,7 @@
 justify-content: center;
 flex-direction: row;
 }
+
+.search-open {
+  min-width: 235px;
+}

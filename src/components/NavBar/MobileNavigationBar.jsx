@@ -32,19 +32,19 @@ const [search, setSearch] = useState(false);
                 onClick={clickHandler}
               />
               {search && (
-                <div>
+  <div className="d-flex align-items-center search-open">
                 <input
                   type="text"
                   placeholder="Search"
-                  className="search-input background-color"
-                  
+                  className="search-input background-color w-100 border-0"
                 />
                 <img src="./close.svg" alt="Close icon" className="close-icon" onClick={clickHandler} />
                </div>
               )}
-              
-              <div className="icons">
-              <div>
+
+              {!search && (
+                <div className="icons">
+         <div>
                 {" "}
                 <img src="./account.svg" alt="Account icon"></img>{" "}
               </div>
@@ -60,6 +60,9 @@ const [search, setSearch] = useState(false);
                 <img src="./menu.svg" alt="Menu icon"></img>
               </div>
               </div>  
+              )}
+              
+          
             </div>
           </div>
         </div>
