@@ -16,6 +16,7 @@ import MobileNavigationBar from "./components/NavBar/MobileNavigationBar.jsx";
 import { useLoaderData } from "react-router-dom";
 import ProductCard from "./components/ProductCard/ProductCard.jsx";
 import { homeLoader } from "./loaders/homeLoader"; // adjust path as needed
+import AllProducts from "./components/Products/AllProducts.jsx";
 
 import { useState, useEffect } from "react";
 
@@ -66,6 +67,7 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Root />}>
       <Route index element={<Home />} loader={homeLoader} />
+      <Route path="browse" element={<AllProducts />} loader={homeLoader} /> 
     </Route>,
   ),
 );
