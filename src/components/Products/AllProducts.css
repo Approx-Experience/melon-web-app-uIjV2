@@ -40,7 +40,8 @@
 
 .all-products .card {
   border: none;
-  box-shadow: none; /* Optional: removes any shadow as well */
+    border-radius: 0; /* Removes border roundness */
+
 } 
 
 .menu-items a {
