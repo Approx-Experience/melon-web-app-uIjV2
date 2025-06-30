@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "nodemon ./server/app.js -w ./server/app.js -w ./server/app.js",
+    "dev": "npm run seed && nodemon ./server/app.js -w ./server/app.js -w ./server/app.js",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",

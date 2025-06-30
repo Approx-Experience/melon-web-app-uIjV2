@@ -1,0 +1,25 @@
+.product-card {
+  margin-bottom: 1.5rem;
+}
+
+.product-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.product-price {
+      color: black;
+}
+
+.product-id {
+  font-size: 0.9rem;
+  color: #888;
+  display: none;
+}
+
+.product-title {
+  font-size: 1.0rem;
+  font-weight: bold;
+}
