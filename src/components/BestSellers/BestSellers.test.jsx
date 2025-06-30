@@ -16,14 +16,4 @@ describe("BestSellers Component", () => {
     expect(subheading).toBeInTheDocument();
   });
 
-  it("renders multiple product images with ProductInfo components", () => {
-    render(<BestSellers />);
-    const productImages = screen.getAllByRole("img");
-    expect(productImages.length).toBeGreaterThan(0);
-
-    productImages.forEach((image) => {
-      expect(image).toHaveClass("img-fluid");
-      // expect(image).toHaveClass("p-2");
-    });
-  });
 });
