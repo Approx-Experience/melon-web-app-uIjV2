@@ -16,6 +16,7 @@ import MobileNavigationBar from "./components/NavBar/MobileNavigationBar.jsx";
 import { useLoaderData } from "react-router-dom";
 import ProductCard from "./components/ProductCard/ProductCard.jsx";
 import { homeLoader } from "./loaders/homeLoader"; // adjust path as needed
+import AllProducts from "./components/Products/AllProducts.jsx";
 
 import { useState, useEffect } from "react";
 
@@ -38,15 +39,15 @@ export function useWindowWidth() {
 function Home() {
   const width = useWindowWidth();
   const { products } = useLoaderData();
-  console.log(products);
+  // console.log(products);
 
   return (
     <>
-      {width <= 768 ? <MobileNavigationBar /> : <NavigationBar />}
+      {width <= 1050 ? <MobileNavigationBar /> : <NavigationBar />}
       {width >= 1050 ? <DesktopBanner /> : <MobileBanner />}
       {width >= 1050 ? <NewArrivals /> : <NewArrivalsMobile />}
-      <BestSellers />
-      <div className="container">
+      <BestSellers products={products}/>
+      {/* <div className="container">
         <div className="row">
           {products.map((product) => (
             <div
@@ -57,7 +58,7 @@ function Home() {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
@@ -66,6 +67,7 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Root />}>
       <Route index element={<Home />} loader={homeLoader} />
+      <Route path="browse" element={<AllProducts />} loader={homeLoader} /> 
     </Route>,
   ),
 );

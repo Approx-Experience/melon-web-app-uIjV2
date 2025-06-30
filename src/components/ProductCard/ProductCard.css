@@ -2,6 +2,26 @@
   margin-bottom: 1.5rem;
 }
 
+.product-card .card-body {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+.product-card-img {
+  width: 100%;
+  height: auto;
+  border-radius: 0 !important; /* Removes border roundness */
+  border: none;
+}
+
+.product-card .card {
+  border: none;
+  box-shadow: none; /* Optional: removes any shadow */
+  border-radius: 0%;
+  background-color: #FAF9F8;
+}
+
 .product-card-footer {
   display: flex;
   justify-content: space-between;
@@ -22,4 +42,16 @@
 .product-title {
   font-size: 1.0rem;
   font-weight: bold;
+}
+
+.product-description {
+  font-size: 0.8rem;
+
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
 }

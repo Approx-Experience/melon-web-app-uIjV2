@@ -1,0 +1,48 @@
+/* SidebarMenu.css */
+.sidebar-menu {
+  width: 220px;
+  min-height: 100vh;
+  background: #faf9f8;
+  padding: 2rem 1rem;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.04);
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.sidebar-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-menu li {
+  margin-bottom: 1rem;
+}
+
+.sidebar-menu a {
+  color: #222;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+
+.sidebar-menu a:hover {
+  color: #e67e22;
+}
+
+.all-products {
+  display: flex;
+  flex-wrap: wrap;
+ margin-left: 250px;;
+}
+
+.all-products .card {
+  border: none;
+    border-radius: 0; /* Removes border roundness */
+} 
+
+.menu-items a {
+    font-weight: bold;
+}
