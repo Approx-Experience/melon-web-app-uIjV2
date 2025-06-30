@@ -39,15 +39,15 @@ export function useWindowWidth() {
 function Home() {
   const width = useWindowWidth();
   const { products } = useLoaderData();
-  console.log(products);
+  // console.log(products);
 
   return (
     <>
-      {width <= 768 ? <MobileNavigationBar /> : <NavigationBar />}
+      {width <= 1050 ? <MobileNavigationBar /> : <NavigationBar />}
       {width >= 1050 ? <DesktopBanner /> : <MobileBanner />}
       {width >= 1050 ? <NewArrivals /> : <NewArrivalsMobile />}
-      <BestSellers />
-      <div className="container">
+      <BestSellers products={products}/>
+      {/* <div className="container">
         <div className="row">
           {products.map((product) => (
             <div
@@ -58,7 +58,7 @@ function Home() {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
     </>
   );
 }

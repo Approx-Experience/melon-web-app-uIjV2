@@ -4,6 +4,9 @@ import "./AllProducts.css"; // Assuming you have a CSS file for styling
 
 function AllProducts() {
   const { products } = useLoaderData();
+  if (!products || products.length === 0) {
+    return <div className="text-center p-4">No products available.</div>;
+    }
     
     return (
         <div>
