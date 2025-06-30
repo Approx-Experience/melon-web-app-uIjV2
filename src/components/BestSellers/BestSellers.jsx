@@ -1,12 +1,9 @@
-// import { useLoaderData } from "react-router-dom";
-// import { homeLoader } from "./loaders/homeLoader"; // adjust path as needed
 import ProductCard from "../ProductCard/ProductCard";
 
 export default function BestSellers({ products }) {
-    if (!products || products.length === 0) {
+  if (!products || products.length === 0) {
     return <div className="text-center p-4">No best sellers available.</div>;
   }
-
 
   return (
     <div className="">
@@ -23,9 +20,7 @@ export default function BestSellers({ products }) {
             >
               <ProductCard {...product} />
             </div>
-          )
-
-          )}
+          ))}
         </div>
       </div>
     </div>

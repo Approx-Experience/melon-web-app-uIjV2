@@ -1,11 +1,11 @@
 .desktop-banner-bg {
-    background-color: #EBF2ED;
+  background-color: #ebf2ed;
 }
 
 .desktop-button {
-    background-color: #35e15c !important;
-    color: black !important;
-    border: none !important;
-    padding: 10px 15px !important;
-    font-weight: bold !important;
+  background-color: #35e15c !important;
+  color: black !important;
+  border: none !important;
+  padding: 10px 15px !important;
+  font-weight: bold !important;
 }
