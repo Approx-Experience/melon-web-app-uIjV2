@@ -37,6 +37,12 @@
   flex-wrap: wrap;
  margin-left: 250px;;
 }
+
+.all-products .card {
+  border: none;
+  box-shadow: none; /* Optional: removes any shadow as well */
+} 
+
 .menu-items a {
     font-weight: bold;
 }
