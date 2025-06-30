@@ -17,14 +17,14 @@
 }
 
 .sidebar-menu li {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .sidebar-menu a {
   color: #222;
   text-decoration: none;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 1rem;
   transition: color 0.2s;
 }
 
@@ -41,7 +41,6 @@
 .all-products .card {
   border: none;
     border-radius: 0; /* Removes border roundness */
-
 } 
 
 .menu-items a {
