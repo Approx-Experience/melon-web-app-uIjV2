@@ -1,0 +1,21 @@
+.background-color {
+    background-color: #ffecda;
+}
+.text-color {
+    color: #e13636;
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.input-style {
+    background-color: #FDECDA;
+    width: 550px;
+    font-size: 13px;
+}
+
+.menu-items-style {
+    width: 500px;
+}

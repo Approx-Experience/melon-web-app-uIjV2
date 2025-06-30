@@ -33,3 +33,7 @@ a:hover {
     color: #747bff;
   }
 }
+
+body {
+  overflow-x: hidden;
+}
