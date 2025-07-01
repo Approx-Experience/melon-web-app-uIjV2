@@ -6,7 +6,7 @@ export default function BestSellers({ products }) {
   }
 
   return (
-    <div className="">
+    <div>
       <div className="new-arrivals d-flex flex-column align-items-center p-4">
         <h2 className="fs-3 fw-bold mb-4">best sellers</h2>
         <h3 className="font-14">The hottest trends in fashion today</h3>
@@ -18,7 +18,8 @@ export default function BestSellers({ products }) {
               className="col-12 col-sm-6 col-md-4 col-lg-3"
               key={product.productId}
             >
-              <ProductCard {...product} />
+              <ProductCard {...product} 
+              />
             </div>
           ))}
         </div>
