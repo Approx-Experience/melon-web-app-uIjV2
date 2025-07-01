@@ -2,7 +2,7 @@ import ProductCard from "../ProductCard/ProductCard";
 
 export default function BestSellers({ products }) {
   if (!products || products.length === 0) {
-    return <div className="text-center p-4">No best sellers available.</div>;
+    return <div className="text-center p-4">No best sellers available.</div>
   }
 
   return (

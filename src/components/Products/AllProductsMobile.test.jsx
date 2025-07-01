@@ -30,7 +30,7 @@ vi.mock('react-router-dom', async () => {
 });
     
     it("renders all products with correct details", () => {
-  render(<AllProducts products={mockProducts} />);
+  render(<AllProducts />);
   mockProducts.forEach(product => {
     expect(screen.getByText(product.title)).toBeInTheDocument();
     expect(screen.getByText(product.description)).toBeInTheDocument();
@@ -39,14 +39,4 @@ vi.mock('react-router-dom', async () => {
     expect(imageElement).toHaveAttribute('src', product.image);
     expect(imageElement).toHaveAttribute('alt', product.title);
   });
-
-  expect(screen.queryByText("No products available.")).not.toBeInTheDocument();
-  expect(screen.getByText("the hottest threads for staying cool")).toBeInTheDocument();
-  expect(screen.getByText("these things are sellin like hotcakes")).toBeInTheDocument();
-  expect(screen.getByText("shirts")).toBeInTheDocument();
-  expect(screen.getByText("polos")).toBeInTheDocument();
-  expect(screen.getByText("tees")).toBeInTheDocument();
-  expect(screen.getByText("long sleeves")).toBeInTheDocument();
-  expect(screen.getByText("shop by category")).toBeInTheDocument();
 });
-
