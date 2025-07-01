@@ -19,20 +19,17 @@ export default function NavBar() {
   }, [isOpen]);
 
   function clickHandler() {
-    console.log("Clicked");
     setSearch(!search);
   }
 
   function menuClickHandler() {
-    console.log("Menu Clicked");
     setIsOpen(!isOpen);
   }
 
   return (
-    <div  className="mobile-navbar w-100">
+    <div className="mobile-navbar w-100">
       <nav className="navbar d-flex flex-column pt-3 px-4 background-color">
         <div className="d-flex flex-row justify-content-between align-items-center w-100">
-
           <div className="d-flex flex-column">
             <h1 className="fw-bold fs-6 text-color">melon</h1>
             <a href="/">
@@ -49,7 +46,7 @@ export default function NavBar() {
                 onClick={clickHandler}
               />
               {search && (
-  <div className="flex-grow-1 d-flex align-items-center ms-3">
+                <div className="flex-grow-1 d-flex align-items-center ms-3">
                   <input
                     type="text"
                     placeholder="Search"
@@ -97,21 +94,9 @@ export default function NavBar() {
                 </div>
               )}
             </div>
-
-
-
-
-
-
-
-
-
-
           </div>
         </div>
       </nav>
-
-
 
       {isOpen && (
         <div className="menu-dropdown-fullscreen">

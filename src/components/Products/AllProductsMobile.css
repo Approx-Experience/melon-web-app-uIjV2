@@ -1,0 +1,24 @@
+
+
+.all-products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.all-products .card {
+  border: none;
+    border-radius: 0; /* Removes border roundness */
+} 
+
+.menu-items a {
+    font-weight: bold;
+}
+
+.browse-title {
+text-align: center;
+}
+
+.browse-secondary-title {
+text-align: center;;
+}
+
