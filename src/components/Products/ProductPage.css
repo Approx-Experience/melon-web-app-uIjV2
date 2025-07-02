@@ -1,0 +1,221 @@
+.product-page-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.product-grid-container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  width: 50%; /* Make the grid take up half the page */
+  box-sizing: border-box; /* Include padding in the width */
+
+  /* For visualization, uncomment a background */
+  /* background-color: #f0f0f0; */
+}
+
+.menu-nav {
+  height: 40px; /* Example fixed height for the menu, adjust as needed */
+  display: flex;
+  align-items: center; /* Vertically center the text */
+  font-size: small;
+  font-weight: bold;
+  padding-left: 1rem;
+  padding-bottom: 10px;
+  margin-bottom: 1rem; /* Space between menu and main image */
+  /* For visualization */
+  /* background-color: #e0e0e0; */
+}
+
+.main-image {
+  flex-grow: 1; /* Allow main image to take up available vertical space */
+  margin-bottom: 1rem; /* Space between main image and secondary images */
+  /* Ensure it takes the full width of its parent (.product-grid-container) */
+  /* width: 100%; */
+
+    width: 100%;
+  aspect-ratio: 4 / 5; /* or adjust to suit your design */
+  overflow: hidden;
+  height: 500px;
+  display: flex; /* Still useful for centering the img tag within this container if needed */
+  justify-content: start;
+  align-items: start;
+}
+
+.main-product-img {
+width: 100%; /* Fill the main-image container */
+  height: 100%; /* Fill the main-image container */
+  object-fit: cover; /* Cover the area, potentially cropping. Use 'contain' if you want to see the whole image. */
+  object-position: 0% 0%;
+}
+
+/* Style for the "shirts" label */
+.main-image::before {
+  position: absolute;
+  bottom: 20px; /* Adjust as needed from the bottom */
+  left: 20px; /* Adjust as needed from the left */
+  background-color: white; /* White background for the label */
+  padding: 0.5rem 1rem; /* Padding around the text */
+  font-weight: bold;
+  z-index: 10; /* Ensure it's above the image */
+  /* For the slight border/shadow effect from your screenshot */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.secondary-images {
+  display: flex;
+  justify-content: space-between; /* Distribute images evenly */
+  gap: 1rem; /* Space between secondary images */
+  width: 100%; /* Ensure it takes the full width of its parent */
+  /* Define a height for consistency, or let images determine it */
+}
+
+.secondary-images img {
+  /* Using flex-basis for better control in flex containers */
+  flex-basis: calc(
+    33.33% - (2 * 1rem / 3)
+  ); /* 1/3 width minus gap distribution */
+  max-width: calc(
+    33.33% - (2 * 1rem / 3)
+  ); /* Ensure it doesn't grow beyond this */
+  height: 100%; /* Fill the height of the .secondary-images container */
+  object-fit: cover; /* Cover the area, cropping if necessary */
+  /* For visualization */
+}
+
+.product-details-container {
+  display: flex;
+  flex-direction: column; /* Stack details vertically */
+  gap: 1rem; /* Space between each detail */
+  width: 45%; /* Full width of the container */
+  margin-top: 80px;
+}
+
+.new-arrival {
+  display: flex;
+  background-color: #ffebda;
+  font-size: small;
+  color: #888; /* Lighter color for the "new arrival" text */
+  margin-bottom: 0.5rem; /* Space below the "new arrival" text */
+  width: fit-content; /* Adjust width to content */
+  padding: 0 10px; /* Padding around the text */
+}
+
+.product-title {
+  display: flex;
+  font-weight: bold;
+  margin-bottom: -5px;
+}
+
+.product-price {
+  display: flex;
+  font-size: large;
+}
+
+.product-description {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  text-align: start;
+  margin-bottom: -5px;
+  width: 75%;
+}
+
+.size-title {
+  font-size: small;
+  display: flex;
+  justify-content: start;
+}
+
+.size-options {
+  display: flex;
+  gap: 1rem; /* Space between size options */
+  justify-content: start;
+  margin-top: -10px;
+}
+.size-options div {
+  border: black 1px solid;
+  width: 25px;
+  font-weight: bold;
+}
+
+.product-cta {
+  display: flex;
+  justify-content: start;
+  align-items: center; /* Center items vertically */
+  gap: 1.5rem; /* Space between buttons */
+}
+.add-to-cart-btn {
+  background-color: black; /* Example color */
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  width: 25%;
+}
+.heart-button {
+  background-color: #fdebeb; /* or any color you want */
+  border-radius: 50%; /* makes it a circle */
+  width: 35px; /* set width and height to the same value */
+  height: 35px;
+  display: flex; /* center the icon inside */
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+}
+
+.heart-button img {
+  width: 60%; /* scale the heart icon */
+  height: 60%;
+  object-fit: contain;
+}
+.color-title {
+  display: flex;
+  font-size: small;
+  margin-top: 1rem; /* Space between the title and color options */
+}
+
+.color-options {
+  display: flex;
+  gap: 0.5rem; /* Space between color options */
+  justify-content: start;
+  margin-top: -10px;
+}
+
+.color-dark-green {
+  background-color: #223c4f; /* or any color you want */
+  border-radius: 50%; /* makes it a circle */
+  width: 25px; /* set width and height to the same value */
+  height: 25px;
+  display: flex; /* center the icon inside */
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+}
+
+.color-dark-red {
+  background-color: #8c4646; /* or any color you want */
+  border-radius: 50%; /* makes it a circle */
+  width: 25px; /* set width and height to the same value */
+  height: 25px;
+  display: flex; /* center the icon inside */
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+}
+
+.color-sand {
+  background-color: #e2be87; /* or any color you want */
+  border-radius: 50%; /* makes it a circle */
+  width: 25px; /* set width and height to the same value */
+  height: 25px;
+  display: flex; /* center the icon inside */
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+}
