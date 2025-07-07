@@ -19,6 +19,7 @@ import { homeLoader } from "./loaders/homeLoader"; // adjust path as needed
 import AllProducts from "./components/Products/AllProducts.jsx";
 import AllProductsMobile from "./components/Products/AllProductsMobile.jsx";
 import BrowseWrapper from "./components/Products/BrowseWrapper.jsx";
+import ProductWrapper from "./components/Products/ProductWrapper.jsx";
 
 import { useState, useEffect } from "react";
 
@@ -59,6 +60,7 @@ const router = createBrowserRouter(
     <Route path="/" element={<Root />}>
       <Route index element={<Home />} loader={homeLoader} />
       <Route path="browse" element={<BrowseWrapper />} loader={homeLoader} /> 
+      <Route path="products" element={<ProductWrapper />} loader={homeLoader} />
     </Route>,
   ),
 );
