@@ -1,5 +1,5 @@
 import ProductPage from "./ProductPage.jsx";
-import ProductPageMobile from "./ProductpageMobile.jsx";
+import ProductPageMobile from "./ProductPageMobile.jsx";
 
 import { useWindowWidth } from "../../App"; // adjust path if needed
 
