@@ -1,57 +1,76 @@
+import React from "react";
 import { useLoaderData } from "react-router-dom";
-import ProductCard from "../ProductCard/ProductCard.jsx";
-import "./ProductPage.css"; 
+import "./ProductPageMobile.css"; 
+import { useSelector, useDispatch } from "react-redux";
+import { setSelectedSize } from "../../redux/productSizeSlice.js";
 
-function ProductPage() {
+const sizes = ["xs", "s", "m", "l", "xl"];
+
+function ProductPageMobile() {
     const { products } = useLoaderData();
+    const selectedSize = useSelector((state) => state.productSizeReducer.selectedSize);
+    const dispatch = useDispatch();
+
     if (!products || products.length === 0) {
         return <div className="text-center p-4">No products available.</div>;
     }
-    
+
+
+  // Place your handler here, before return
+  function handleSizeChange(size) {
+    dispatch(setSelectedSize(size));
+  }
+
     return (
-  <div className="product-page-wrapper">
-
-
- <div className="product-grid-container p-4">
-        <div className="menu-nav">home / men / shirts / tees</div>
-        <div className="main-image">
+  <div className="product-page-wrapper-mobile">
+ <div className="product-grid-container-mobile">
+        {/* <div className="menu-nav">home / men / shirts / tees/mobile</div> */}
+        <div className="main-image-mobile">
           <img src="shirts.png" alt="Main product" className="main-product-img" />
         </div>
-        <div className="secondary-images">
-          <img src="shirts.png" alt="Secondary 1" />
-          <img src="shirts.png" alt="Secondary 2" />
-          <img src="shirts.png" alt="Secondary 3" />
-        </div>
 </div>
-<div className="product-details-container">
-    <p className="new-arrival">new arrival</p>
-<h1 className="product-title">product title</h1>
-<h2 className="product-price">$10.00</h2>
-<p className="product-description">Product description. You can do a lot of cool stuff while wearing this piece. People will
-    like you more and you'll be more confident. Stop limiting yourself and buy this thing. You need it and you want it.
-</p>
+
+<div className="product-details-container-mobile">
+  <h1 className="product-title-mobile">product title placeholder</h1>
+  <h2 className="product-price">$10.00</h2>
+  <p className="product-description-mobile">Product description. You can do a lot of cool stuff while wearing this piece. People will
+      like you more and you'll be more confident. Stop limiting yourself and buy this thing. You need it and you want it.
+  </p>
 <p className="color-title">available colors:</p>
-<div className="color-options">
+<div className="color-options-mobile">
     <div className="color-dark-green"></div>
     <div className="color-dark-red"></div>
     <div className="color-sand"></div>
 </div>
-<p className="size-title">size:</p>
-<div className="size-options">
-    <div>xs</div>
-    <div>s</div>
-    <div>m</div>
-    <div>l</div>
-    <div>xl</div>
+
+
+<p className="size-title-mobile">size:</p>
+<div className="size-options-mobile">
+{sizes.map((size) => (
+  <button
+    key={size}
+    onClick={() => handleSizeChange(size)}
+    className={`border px-4 py-2 rounded-full size-button-mobile ${
+      selectedSize === size ? "selected" : ""
+    }`}
+  >
+    {size}
+  </button>
+))}
+
+
     </div>
 
     <div className="product-cta">
-<button className="add-to-cart-btn">Add to Cart</button>
+<button className="add-to-cart-btn-mobile">Add to Cart</button>
 <div className="heart-button"><img src="./favorite.svg"></img></div>
 </div>
 </div>
+
+
 </div>
 
  
-    )}
-export default ProductPage;
+    );
+}
+export default ProductPageMobile;
