@@ -58,6 +58,12 @@
   background-color: black;
   color: white;
 }
+.size-options-mobile.unselected {
+  background-color: white;
+  color: black;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+
+}
 
 .size-options-mobile div {
   border: black 1px solid;
