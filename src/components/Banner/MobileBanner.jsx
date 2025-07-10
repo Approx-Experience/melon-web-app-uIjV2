@@ -1,6 +1,6 @@
 import Button from "react-bootstrap/Button";
 import "./MobileBanner.css";
-
+// import { MemoryRouter } from "react-router-dom";
 export default function Banner() {
   return (
     <div className="banner bannerimage d-flex align-items-center justify-content-around p-5">
@@ -16,5 +16,6 @@ export default function Banner() {
         </Button></a>
       </div>
     </div>
+    // </MemoryRouter>
   );
 }

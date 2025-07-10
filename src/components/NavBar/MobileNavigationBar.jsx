@@ -1,5 +1,6 @@
 import "./MobileNavigationBar.css";
 import { useState, useEffect } from "react";
+// import { MemoryRouter } from "react-router-dom";
 
 export default function NavBar() {
   const [search, setSearch] = useState(false);
@@ -27,6 +28,7 @@ export default function NavBar() {
   }
 
   return (
+    // <MemoryRouter>
     <div className="mobile-navbar w-100">
       <nav className="navbar d-flex flex-column pt-3 px-4 background-color">
         <div className="d-flex flex-row justify-content-between align-items-center w-100">
@@ -129,5 +131,6 @@ export default function NavBar() {
         </div>
       )}
     </div>
+    // </MemoryRouter>
   );
 }

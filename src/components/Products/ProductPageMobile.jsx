@@ -72,4 +72,5 @@ function ProductPageMobile() {
     </div>
   );
 }
+
 export default ProductPageMobile;

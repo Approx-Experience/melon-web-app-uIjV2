@@ -1,8 +1,9 @@
 import React from "react";
 import "./NewArrivals.css";
-
+// import { MemoryRouter } from "react-router-dom";
 export default function NewArrivals() {
   return (
+    // <MemoryRouter>
     <div className="new-arrivals d-flex flex-column align-items-center justify-content-center p-4">
       <h2 className="fs-3 fw-bold m-4">new arrivals</h2>
       <h3 className="font-14">Fashionable threads for your eyes to see</h3>
@@ -34,5 +35,6 @@ export default function NewArrivals() {
         </div>
       </div>
     </div>
+    // </MemoryRouter>
   );
 }
