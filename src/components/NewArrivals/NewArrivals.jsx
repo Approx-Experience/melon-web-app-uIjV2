@@ -11,12 +11,12 @@ export default function NewArrivals() {
           <img
             src="./shirts.png"
             alt="New Arrival 1"
-            className=" m-2 main-image"
+            className=" m-2 main-image-1"
           />
           <img
             src="./shorts.png"
             alt="New Arrival 2"
-            className="m-2 main-image"
+            className="m-2 main-image-1"
           />
         </div>
 
