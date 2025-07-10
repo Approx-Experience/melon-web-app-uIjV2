@@ -55,7 +55,7 @@ function ProductPageMobile() {
             <button
               key={size}
               onClick={() => handleSizeChange(size)}
-              className={`size-options-mobile${selectedSize === size ? " selected" : ""}`}
+              className={`size-options-mobile${selectedSize === size ? " selected" : " unselected"}`}
             >
               {size}
             </button>

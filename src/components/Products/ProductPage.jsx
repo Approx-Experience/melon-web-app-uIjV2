@@ -1,12 +1,25 @@
 import { useLoaderData } from "react-router-dom";
 import "./ProductPage.css"; 
+import { useSelector, useDispatch } from "react-redux";
+import { setSelectedSize } from "../../redux/productSizeSlice.js";
+
+const sizes = ["xs", "s", "m", "l", "xl"];
 
 function ProductPage() {
     const { products } = useLoaderData();
+    const selectedSize = useSelector(
+        (state) => state.productSizeReducer.selectedSize,
+    );
+    const dispatch = useDispatch();
+
     if (!products || products.length === 0) {
         return <div className="text-center p-4">No products available.</div>;
     }
     
+    function handleSizeChange(size) {
+        dispatch(setSelectedSize(size));
+    }
+
     return (
   <div className="product-page-wrapper">
 
@@ -37,11 +50,17 @@ function ProductPage() {
 </div>
 <p className="size-title">size:</p>
 <div className="size-options">
-    <div>xs</div>
-    <div>s</div>
-    <div>m</div>
-    <div>l</div>
-    <div>xl</div>
+    
+{sizes.map((size) => (
+    <button
+    key={size}
+    onClick={() => handleSizeChange(size)}
+    className={`size-options${selectedSize === size ? " selected" : " unselected"}`}
+    >
+    {size}
+    </button>
+))}
+
     </div>
 
     <div className="product-cta">
