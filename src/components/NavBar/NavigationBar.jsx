@@ -1,7 +1,8 @@
 import "./NavigationBar.css";
-
+// import { MemoryRouter } from "react-router-dom";
 export default function NavigationBar() {
   return (
+    // <MemoryRouter>
     <div>
       <nav
         className="navbar d-flex flex-column pt-5 px-4 background-color"
@@ -60,5 +61,6 @@ export default function NavigationBar() {
         </div>
       </nav>
     </div>
+    // </MemoryRouter>
   );
 }

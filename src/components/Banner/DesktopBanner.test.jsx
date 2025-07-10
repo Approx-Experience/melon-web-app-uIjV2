@@ -1,9 +1,14 @@
 import { render, screen } from "@testing-library/react";
 import DesktopBanner from "./DesktopBanner";
+// import { MemoryRouter } from "react-router-dom";
 
 describe("Desktop Banner Component", () => {
   it('renders the "SUMMER 2025" heading', () => {
-    render(<DesktopBanner />);
+    render(
+  
+    <DesktopBanner />
+
+);
     // Using getByRole with 'heading' and a regex for text content (case-insensitive)
 
     const heading = screen.getByRole("heading", { name: /summer 2025/i });
@@ -39,3 +44,21 @@ describe("Desktop Banner Component", () => {
     expect(image).toHaveAttribute("src", "./banner-1.png");
   });
 });
+
+
+// DesktopBanner.test.jsx
+// import { render, screen } from "@testing-library/react";
+// import DesktopBanner from "./DesktopBanner";
+// // import { MemoryRouter } from "react-router-dom"; // Still need this import if it's there
+
+// describe("Desktop Banner Component", () => {
+//   it('renders "Hello World Test"', () => {
+//     render(
+// <div>
+//         <DesktopBanner />
+// </div>
+//     );
+//     const textElement = screen.getByText("Hello World Test");
+//     expect(textElement).toBeInTheDocument();
+//   });
+// });

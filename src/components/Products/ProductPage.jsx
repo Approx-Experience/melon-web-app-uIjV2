@@ -1,5 +1,4 @@
 import { useLoaderData } from "react-router-dom";
-import ProductCard from "../ProductCard/ProductCard.jsx";
 import "./ProductPage.css"; 
 
 function ProductPage() {

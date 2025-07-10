@@ -1,7 +1,6 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import "./ProductCard.css";
-
 export default function ProductCard({
   title,
   description,
@@ -10,6 +9,7 @@ export default function ProductCard({
   productId,
 }) {
   return (
+
     <div className="product-card">
       <Card>
         <Card.Img
@@ -34,5 +34,6 @@ export default function ProductCard({
         </Card.Body>
       </Card>
     </div>
+
   );
 }

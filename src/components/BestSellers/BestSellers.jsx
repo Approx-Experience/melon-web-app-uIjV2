@@ -1,11 +1,12 @@
 import ProductCard from "../ProductCard/ProductCard";
-
+// import { MemoryRouter } from "react-router-dom";
 export default function BestSellers({ products }) {
   if (!products || products.length === 0) {
     return <div className="text-center p-4">No best sellers available.</div>
   }
 
   return (
+    // <MemoryRouter>
     <div>
       <div className="new-arrivals d-flex flex-column align-items-center p-4">
         <h2 className="fs-3 fw-bold mb-4">best sellers</h2>
@@ -25,5 +26,6 @@ export default function BestSellers({ products }) {
         </div>
       </div>
     </div>
+    // </MemoryRouter>
   );
 }
