@@ -129,15 +129,28 @@ width: 100%; /* Fill the main-image container */
 
 .size-options {
   display: flex;
-  gap: 1rem; /* Space between size options */
-  justify-content: start;
-  margin-top: -10px;
+  gap: 0.5rem; /* Space between size options */
+margin-bottom: 2rem;
 }
+
+.size-options.selected {
+  background-color: black; /* Example color for selected size */
+  color: white; /* Text color for selected size */
+}
+.size-options.unselected {
+  background-color: white; /* Example color for unselected size */
+  color: black; /* Text color for unselected size */
+  cursor: pointer; /* Change cursor to pointer for unselected sizes */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
 .size-options div {
   border: black 1px solid;
   width: 25px;
   font-weight: bold;
 }
+
+
 
 .product-cta {
   display: flex;
